@@ -1,0 +1,19 @@
+server:
+  port: 8000
+
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/student_study?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: sjk1234
+  servlet:
+    multipart:
+      max-file-size: 1000MB
+
+mybatis-plus:
+  mapperLocations: classpath:mapper/**/*.xml
+
+file:
+  videoPath: C:\Users\12465\Desktop\s\file\video\
+  imagePath: C:\Users\12465\Desktop\s\file\image\
